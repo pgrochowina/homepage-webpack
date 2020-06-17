@@ -1,0 +1,63 @@
+.debug-container{
+  background: white;
+  padding: 16px;
+  display: flex;
+  justify-content: center;
+}
+
+.table{
+  border: $borderStyle;
+  border-collapse: collapse;
+  font-family: sans-serif;
+  color: black;
+  width: 250px;
+  &__header{
+    border: $borderStyle;
+    background-color: $headreBackground;
+    font-size: 14.28px;
+    &--pl{
+      display: block;
+      padding: 4px;
+    }
+    &--en{
+      display: block;
+      font-weight: normal;
+      font-style: italic;
+      padding: 4px;
+    }
+  }
+  &__cell-left{
+    padding: 4px;
+    font-size: 11.9px;
+    background: #eeeeee;
+    display: table-cell;display: table-cell;
+    line-height: 1.6;
+    vertical-align: top;
+  }
+  &__cell-right{
+    padding: 4px;
+    font-size: 11.9px;
+    width: 50%;
+    line-height: 1.6;
+    vertical-align: top;
+    &--red{
+      color: #BA0000;
+    }
+    &--link{
+      text-decoration: none;
+      color: #0645ad;
+      &:visited{
+        color:#0b0080;
+      }
+    }   
+  }
+  &__subheader{
+    border: $borderStyle;
+    background-color: $headreBackground;
+    padding: 4px;
+    font-size: 11.9px;
+    font-weight: bold;
+    line-height: 1.6;
+    text-align: center;
+  }
+}
